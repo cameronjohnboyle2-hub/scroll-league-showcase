@@ -1,0 +1,43 @@
+name: Publish fictional demo
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci --ignore-scripts
+      - run: npm run check
+      - name: Export disconnected demo for this repository path
+        run: npm run export:demo
+        env:
+          PORTFOLIO_BASE_PATH: /${{ github.event.repository.name }}
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist-demo
+          name: demo-pages-${{ github.run_id }}-${{ github.run_attempt }}
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publish static artifact
+        id: deployment
+        uses: actions/deploy-pages@v4
+        with:
+          artifact_name: demo-pages-${{ github.run_id }}-${{ github.run_attempt }}

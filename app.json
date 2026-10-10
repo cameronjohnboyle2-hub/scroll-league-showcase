@@ -1,0 +1,26 @@
+{
+  "expo": {
+    "name": "Scroll League",
+    "slug": "scroll-league",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "scheme": "scrollleague",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "plugins": ["expo-router"],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.scrollleague.app"
+    },
+    "android": {
+      "package": "com.scrollleague.app"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+node_modules/
+.expo/
+dist/
+dist-demo/
+web-build/
+.env
+.env.*.local
+*.log
+.DS_Store
+coverage/
+.codex/
+.eas/
+.supabase/
+
+.env.*
+!.env.example

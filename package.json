@@ -1,0 +1,55 @@
+{
+  "name": "scroll-league",
+  "version": "0.1.0",
+  "private": true,
+  "main": "expo-router/entry",
+  "scripts": {
+    "start": "expo start",
+    "web": "expo start --web",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "export:web": "expo export --platform web",
+    "typecheck": "tsc --noEmit",
+    "lint": "expo lint",
+    "test": "node --experimental-strip-types --test tests/*.test.ts tests/*.test.mjs",
+    "check": "npm run test && npm run typecheck && npm run lint",
+    "export:demo": "node scripts/export-demo.mjs",
+    "preview:demo": "node scripts/serve-demo.mjs"
+  },
+  "dependencies": {
+    "@expo-google-fonts/barlow-condensed": "^0.4.1",
+    "@expo-google-fonts/inter": "^0.4.2",
+    "@react-native-async-storage/async-storage": "^2.2.0",
+    "@supabase/supabase-js": "^2.49.4",
+    "expo": "~57.0.10",
+    "expo-constants": "~57.0.9",
+    "expo-font": "~57.0.4",
+    "expo-linking": "~57.0.5",
+    "expo-router": "~57.0.10",
+    "expo-status-bar": "~57.0.1",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "react-native": "0.86.2",
+    "react-native-safe-area-context": "~5.7.0",
+    "react-native-screens": "~4.26.0",
+    "react-native-url-polyfill": "^2.0.0",
+    "react-native-web": "~0.21.0",
+    "decode-uri-component": "file:./vendor/decode-uri-component"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/react": "~19.2.2",
+    "eslint": "^9.39.0",
+    "eslint-config-expo": "~57.0.1",
+    "typescript": "~6.0.3"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "overrides": {
+    "query-string": {
+      "decode-uri-component": "$decode-uri-component"
+    },
+    "source-map-js": "1.2.2"
+  }
+}
