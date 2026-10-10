@@ -26,7 +26,7 @@ The font OFL notices and the decoder MIT notice are retained in both source and 
 
 ## Database verification boundary
 
-Local Docker/Supabase tooling is unavailable in this review environment. [Public CI run 38023608565](https://github.com/cameronjohnboyle2-hub/scroll-league-showcase/actions/runs/38023608565) passed clean installation, 16 application tests, TypeScript, lint, demo export, migration reset, fictional seed, and 20 database acceptance checks at the first public commit fb9d9a501d38a1dd4a6e5223affa4808f6bf52b3, using Supabase CLI 2.120.0. That root commit has the exact reviewed source tree and no parent commit. No hosted database, authentication settings, SMTP delivery, production records, or EAS configuration were accessed.
+Local Docker/Supabase tooling is unavailable in this review environment. [Public CI run 38023608565](https://github.com/cameronjohnboyle2-hub/scroll-league-showcase/actions/runs/38023608565) passed clean installation, 16 application tests, TypeScript, lint, demo export, migration reset, fictional seed, and 20 database acceptance checks at the first public commit fb9d9a501d38a1dd4a6e5223affa4808f6bf52b3, using Supabase CLI 2.120.0. That root commit is byte-identical to the reviewed source archive and has no parent commit. The archive uses CRLF line endings in 79 text files, so its Git tree differs from the original normalized tree only in those line endings; both image files are unchanged. No hosted database, authentication settings, SMTP delivery, production records, or EAS configuration were accessed.
 
 ## Public demo verification
 
