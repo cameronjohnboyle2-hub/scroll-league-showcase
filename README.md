@@ -6,6 +6,8 @@ An AI-assisted product project by **Cameron Boyle**. The project demonstrates tu
 
 ## Explore the fictional demo
 
+[Open the live fictional demo](https://cameronjohnboyle2-hub.github.io/scroll-league-showcase/). This repository publishes the reviewed source with fresh history.
+
 The portfolio build uses **Daybreak Demo** with four invented players. It works without an account or backend. Try the entry score preview, the missing-day example in matchups, season standings, and a completed week's recap. Dates stay relative to the league's timezone.
 
 ![Fictional Scroll League portfolio preview](docs/screenshots/desktop.jpg)
@@ -20,7 +22,7 @@ Use Node.js 24. Open **http://127.0.0.1:4179/scroll-league-showcase/demo**. The 
 
 The exporter disables dotenv loading, excludes inherited public backend settings, and forces every product route into demo mode. Signup and join routes redirect to the demo. The demo has no backend client, account session, analytics calls, or external avatar previews. A browser content policy blocks network connections. Interactive previews do not save entries or settings.
 
-The default static path is `/scroll-league-showcase`; `PORTFOLIO_BASE_PATH` can set a different single repository path before exporting. The prepared Pages workflow uses the destination repository's actual name and publishes only the generated artifact when manually run. Publication and Pages configuration require review; no hosted URL is claimed here.
+The default static path is `/scroll-league-showcase`; `PORTFOLIO_BASE_PATH` can set a different single repository path before exporting. The manual Pages workflow uses this repository's name and publishes only the generated artifact. [Public CI](https://github.com/cameronjohnboyle2-hub/scroll-league-showcase/actions/runs/38023608565) and [demo deployment](https://github.com/cameronjohnboyle2-hub/scroll-league-showcase/actions/runs/38023651922) passed; the hosted core flows were browser-checked on 2026-10-09.
 
 ## Product and engineering decisions
 

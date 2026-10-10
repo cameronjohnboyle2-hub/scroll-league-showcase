@@ -4,7 +4,7 @@ Last updated: 2026-10-09
 
 ## State
 
-The authenticated MVP remains a prototype awaiting hosted setup and live acceptance. A separate disconnected portfolio export is prepared with fictional identities, coherent sample outcomes, locked dependencies, and attributed fonts/decoder code. Public publication has not occurred.
+The disconnected fictional portfolio demo is [live](https://cameronjohnboyle2-hub.github.io/scroll-league-showcase/) and its source is public with fresh history. The authenticated MVP remains a prototype awaiting hosted setup and live acceptance. Fictional identities, coherent sample outcomes, locked dependencies, and attributed fonts/decoder code are included.
 
 ## Verified in portfolio preparation
 
@@ -26,8 +26,12 @@ The font OFL notices and the decoder MIT notice are retained in both source and 
 
 ## Database verification boundary
 
-The September 28 GitHub CI run passed at the original Website commit. Local Docker/Supabase tooling is unavailable in this review environment; the new [private draft PR](https://github.com/cameronjohnboyle2-hub/Scroll-League/pull/1) passed clean installation, 16 application tests, TypeScript, lint, demo export, migration reset, fictional seed, and 20 database acceptance checks at code revision 30ce66bf029a997990e9685284c355daa1022442, using Supabase CLI 2.120.0. [Verification run](https://github.com/cameronjohnboyle2-hub/Scroll-League/actions/runs/38022364059). Subsequent status-document edits do not change application code; inspect the PR's latest run before publication. No hosted database, authentication settings, SMTP delivery, production records, or EAS configuration were accessed.
+Local Docker/Supabase tooling is unavailable in this review environment. [Public CI run 38023608565](https://github.com/cameronjohnboyle2-hub/scroll-league-showcase/actions/runs/38023608565) passed clean installation, 16 application tests, TypeScript, lint, demo export, migration reset, fictional seed, and 20 database acceptance checks at the first public commit fb9d9a501d38a1dd4a6e5223affa4808f6bf52b3, using Supabase CLI 2.120.0. That root commit has the exact reviewed source tree and no parent commit. No hosted database, authentication settings, SMTP delivery, production records, or EAS configuration were accessed.
+
+## Public demo verification
+
+[Pages run 38023651922](https://github.com/cameronjohnboyle2-hub/scroll-league-showcase/actions/runs/38023651922) passed both build and deployment. An unauthenticated browser check verified landing navigation, entry score previews and read-only feedback, unchanged fictional entries after a save attempt, standings, missing-day labels, week-two recap, and direct `/home` access without a demo query. A 390 by 844 phone viewport fit its width. The hosted HTML includes the connection-denying content policy; reviewed first-load/navigation flows reported no console errors. These checks do not establish production or native behavior.
 
 ## Single next step
 
-Review the prepared fresh public snapshot and static demo, together with the new PR's CI result, then decide whether to publish the showcase. Keep original private history separate. The manual Pages workflow has been prepared but has not been run.
+Use the public demo and source in the portfolio. A separate authenticated pilot still needs hosted configuration, multi-account acceptance, consent, and measurable user outcomes. Keep the original private history separate.

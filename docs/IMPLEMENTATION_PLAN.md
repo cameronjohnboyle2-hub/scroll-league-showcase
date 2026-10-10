@@ -86,7 +86,7 @@ Exit criterion: the public pilot URL supports confirmed-email onboarding and cap
 - [x] Pass 16 local tests, TypeScript, lint, and static export.
 - [x] Verify fictional browser flows at desktop and phone widths, including zero/missing reports and a clean first load.
 - [x] Confirm the new draft PR's fresh database CI at code revision 30ce66bf029a997990e9685284c355daa1022442: 20 checks pass.
-- [ ] Approve and publish the fresh source snapshot and disconnected static artifact.
+- [x] Approve and publish the fresh source snapshot and disconnected static artifact; public CI and Pages runs pass, and hosted core flows were browser-checked on 2026-10-09.
 - [ ] Configure and accept the separate hosted pilot; native-device validation remains separate.
 
 The earlier pilot checklist above retains its own evidence boundary. Portfolio browser verification does not complete live onboarding, database deployment, recruitment, or retention experiments.
