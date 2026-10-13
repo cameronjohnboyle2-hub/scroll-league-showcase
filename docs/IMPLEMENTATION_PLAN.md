@@ -98,3 +98,8 @@ The earlier pilot checklist above retains its own evidence boundary. Portfolio b
 - [ ] Review active-league-week retention and participation.
 - [ ] Interview members about matchups, recaps, and consequences.
 - [ ] Choose the next experiment: target fairness, consequences vs. none, or recap shareability.
+
+
+## 2026-10-13 portfolio presentation
+
+Make the mini-showcase scope visible in the shared demo shell and README. Verify the existing application checks, export, desktop and narrow layout before reporting the updated hosted page as published. No database or authenticated-flow implementation is changed.

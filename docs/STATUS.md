@@ -35,3 +35,8 @@ Local Docker/Supabase tooling is unavailable in this review environment. [Public
 ## Single next step
 
 Use the public demo and source in the portfolio. A separate authenticated pilot still needs hosted configuration, multi-account acceptance, consent, and measurable user outcomes. Keep the original private history separate.
+
+
+## 2026-10-13 presentation update
+
+The shared demo shell and README now explicitly describe the public site as a small fictional showcase of the broader authenticated prototype. Account-backed leagues, persisted entries, membership controls and database-backed finalization belong to that broader scope. This copy/layout update adds no backend capability or live-pilot claim. Local checks and hosted review are recorded in the portfolio release evidence after validation.

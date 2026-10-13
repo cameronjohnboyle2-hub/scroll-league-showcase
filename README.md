@@ -1,5 +1,7 @@
 # Scroll League
 
+**The hosted link is a mini fictional showcase—not the full authenticated app.** It presents selected scoring and competition screens from Cameron’s larger AI-assisted Scroll League prototype. The full prototype includes account-backed leagues, persisted entries, membership controls and database-backed week finalization. Those capabilities are not connected in the public mini demo. The reviewed repository includes the broader prototype source; hosted multi-account pilot acceptance remains separate.
+
 A browser-first screen-time competition prototype: report recreational phone use, compete against a personal target, and follow weekly matchups, standings, and recaps.
 
 An AI-assisted product project by **Cameron Boyle**. The project demonstrates turning a product brief into a usable interaction flow, making scoring and fairness rules explicit, and carrying those rules through application and database checks. It is a prototype; no adoption or retention outcome is claimed.

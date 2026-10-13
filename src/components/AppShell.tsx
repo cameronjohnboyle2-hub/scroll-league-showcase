@@ -47,6 +47,10 @@ export function AppShell({ children, demo = false }: PropsWithChildren<{ demo?: 
             {demo ? <Pill tone="lime">Fictional demo</Pill> : <Pill>Private league</Pill>}
           </View>
           <ScrollView contentContainerStyle={[styles.content, desktop && styles.contentDesktop]} showsVerticalScrollIndicator={false}>
+            {demo ? <View style={styles.demoScope}>
+              <Text style={styles.demoScopeTitle}>Mini showcase — NOT the full Scroll League app</Text>
+              <Text style={styles.demoScopeBody}>Selected screens from the larger authenticated prototype. Its accounts, persistent leagues, membership controls and database-backed week finalization are not connected here. All players and results in this mini demo are fictional.</Text>
+            </View> : null}
             {children}
           </ScrollView>
           {!desktop ? navigation : null}
@@ -63,6 +67,9 @@ const styles = StyleSheet.create({
   topbar: { height: 62, borderBottomColor: colors.line, borderBottomWidth: 1, paddingHorizontal: spacing.lg, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' },
   brand: { color: colors.text, fontFamily: font.display, fontSize: 20, letterSpacing: 0.3 },
   content: { width: '100%', maxWidth: 1080, alignSelf: 'center', padding: spacing.lg, paddingBottom: 108, gap: spacing.lg },
+  demoScope: { backgroundColor: colors.surface, borderColor: colors.line, borderWidth: 1, borderRadius: radius.md, padding: spacing.md, gap: spacing.sm },
+  demoScopeTitle: { color: colors.lime, fontFamily: font.bodyBold, fontSize: 14 },
+  demoScopeBody: { color: colors.muted, fontFamily: font.bodyBold, fontSize: 12, lineHeight: 19 },
   contentDesktop: { paddingHorizontal: spacing.xxl, paddingVertical: spacing.xxl },
   nav: { backgroundColor: colors.surface, borderColor: colors.line },
   navDesktop: { width: 112, borderRightWidth: 1, paddingVertical: spacing.xl, gap: spacing.sm },

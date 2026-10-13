@@ -97,3 +97,8 @@ Append decisions; do not rewrite history. Proposed changes to the PRD should cit
 - Decision: Pin source-map-js to its patched release and adapt the official patched URL decoder's export boundary to CommonJS for query-string 7, preserving its algorithm and MIT notice. Retain the current Expo SDK.
 - Alternative: a forced SDK downgrade suggested by npm audit or a major SDK migration; either broadens scope and needs separate native validation.
 - Consequence: route-parser regression tests and attribution are required. Remaining upstream build-tool advisories are documented, not treated as cleared.
+
+
+## 2026-10-13 — Make the public mini-showcase boundary explicit
+
+Cameron requested prominent labels distinguishing the small public demo from the larger original product. Add a shared notice on every demo screen and explain the full authenticated prototype in the README. Keep fictional fixtures and disconnected behavior; this presentation change adds no product capability and makes no live-pilot claim.
