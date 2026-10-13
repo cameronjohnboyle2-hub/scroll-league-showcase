@@ -1,10 +1,10 @@
 # Scroll League
 
-**The hosted link is a mini fictional showcase—not the full authenticated app.** It presents selected scoring and competition screens from Cameron’s larger AI-assisted Scroll League prototype. The full prototype includes account-backed leagues, persisted entries, membership controls and database-backed week finalization. Those capabilities are not connected in the public mini demo. The reviewed repository includes the broader prototype source; hosted multi-account pilot acceptance remains separate.
+**The hosted link is a mini fictional showcase—not the full authenticated app.** It presents selected scoring and competition screens from my larger AI-assisted Scroll League prototype. The full prototype includes account-backed leagues, persisted entries, membership controls and database-backed week finalization. Those capabilities are not connected in the public mini demo. The reviewed repository includes the broader prototype source; hosted multi-account pilot acceptance remains separate.
 
 A browser-first screen-time competition prototype: report recreational phone use, compete against a personal target, and follow weekly matchups, standings, and recaps.
 
-An AI-assisted product project by **Cameron Boyle**. The project demonstrates turning a product brief into a usable interaction flow, making scoring and fairness rules explicit, and carrying those rules through application and database checks. It is a prototype; no adoption or retention outcome is claimed.
+I designed and developed this AI-assisted product prototype, turning a product brief into a usable interaction flow, making scoring and fairness rules explicit, and carrying those rules through application and database checks. It is a prototype; no adoption or retention outcome is claimed.
 
 ## Explore the fictional demo
 
@@ -51,7 +51,7 @@ See [current verification and limits](docs/STATUS.md), [product requirements](do
 
 Use the [Supabase CLI](https://supabase.com/docs/guides/local-development/cli/getting-started) and Docker, then run `supabase start` and `supabase db reset`. Copy `.env.example` to `.env` and supply only the local API URL and local publishable key. Start the app with `npm run web`. The portfolio flag must be unset for this separate development configuration.
 
-The seed is disposable local test data: `demo-atlas@example.test`, `demo-birch@example.test`, `demo-cedar@example.test`, `demo-dune@example.test`, and `demo-elm@example.test` belong to Daybreak Demo. `demo-flint@example.test` and `demo-grove@example.test` exercise a separate isolation league. The local-only password is `Password123!`; invite codes are `DEMO2026` and `OTHER26`. Never apply this seed to a hosted production database.
+The seed contains disposable local test accounts in Daybreak Demo and a separate isolation league. Never apply this seed to a hosted production database.
 
 Hosted authentication, SMTP delivery, database policies, scheduling, and EAS deployment require separate configuration and live acceptance testing. Follow [the deployment runbook](docs/DEPLOYMENT.md) for the authenticated prototype; `export:web` is a pilot export, while `export:demo` is the disconnected portfolio export.
 
